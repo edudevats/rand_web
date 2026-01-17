@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | Randvaal Petroleum</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Roboto:wght@400;500&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .page-header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        .contact-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            margin-top: 40px;
+        }
+
+        .contact-form {
+            background: var(--bg-white);
+            padding: 30px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-family: inherit;
+        }
+
+        .contact-info-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+            margin-bottom: 25px;
+        }
+
+        .contact-info-item i {
+            color: var(--secondary-color);
+            font-size: 1.5rem;
+            margin-top: 5px;
+        }
+
+        @media (max-width: 768px) {
+            .contact-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="container navbar">
+            <div class="logo-container">
+                <a href="index_es.html">
+                    <img src="logo.jpg" alt="Logo de Randvaal Petroleum">
+                </a>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index_es.html">Inicio</a></li>
+                    <li><a href="about_es.html">Nosotros</a></li>
+                    <li><a href="services_es.html">Servicios</a></li>
+                    <li><a href="contact_es.html" class="active">Contacto</a></li>
+                    <li><a href="contact.html" class="lang-btn"><i class="fa-solid fa-globe"></i> EN</a></li>
+                </ul>
+            </nav>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>Contáctenos</h1>
+                <p>Estamos aquí para ayudarle con sus requerimientos energéticos.</p>
+            </div>
+        </section>
+
+        <section class="section-padding">
+            <div class="container">
+                <div class="contact-container">
+
+                    <div>
+                        <h2 class="section-title">Póngase en Contacto</h2>
+                        <p style="margin-bottom: 30px;">
+                            ¿Tiene alguna pregunta sobre nuestros servicios o desea explorar oportunidades de
+                            colaboración? Complete el formulario o contáctenos directamente utilizando la información a
+                            continuación.
+                        </p>
+
+                        <div class="contact-info-item">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <div>
+                                <h3>Sede Central</h3>
+                                <p>123 Energy Drive, Zona Industrial<br>Ciudad, País, CP</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-info-item">
+                            <i class="fa-solid fa-phone"></i>
+                            <div>
+                                <h3>Teléfono</h3>
+                                <p>+1 234 567 8900</p>
+                                <p>Lun - Vie: 8am - 6pm</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-info-item">
+                            <i class="fa-solid fa-envelope"></i>
+                            <div>
+                                <h3>Correo Electrónico</h3>
+                                <p>ventas@randvaalpetroleum.lat</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-form">
+                        <h3>Envíenos un Mensaje</h3>
+                        <br>
+                        <form action="#" method="POST">
+                            <div class="form-group">
+                                <label for="name">Nombre Completo</label>
+                                <input type="text" id="name" name="name" required placeholder="Juan Pérez">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Dirección de Correo</label>
+                                <input type="email" id="email" name="email" required placeholder="juan@ejemplo.com">
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Asunto</label>
+                                <input type="text" id="subject" name="subject" placeholder="Consulta sobre...">
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Mensaje</label>
+                                <textarea id="message" name="message" rows="5" required
+                                    placeholder="¿Cómo podemos ayudarle?"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h4>Randvaal Petroleum</h4>
+                    <p>Su socio de confianza en energía. Entregando excelencia y confiabilidad en cada gota.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Enlaces Rápidos</h4>
+                    <ul>
+                        <li><a href="index_es.html">Inicio</a></li>
+                        <li><a href="about_es.html">Nosotros</a></li>
+                        <li><a href="services_es.html">Servicios</a></li>
+                        <li><a href="contact_es.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Información de Contacto</h4>
+                    <ul>
+                        <li><i class="fa-solid fa-location-dot"></i> 123 Energy Drive, Zona Industrial</li>
+                        <li><i class="fa-solid fa-phone"></i> +1 234 567 8900</li>
+                        <li><i class="fa-solid fa-envelope"></i> ventas@randvaalpetroleum.lat</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Randvaal Petroleum. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
